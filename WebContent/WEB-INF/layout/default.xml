@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<definition name="software.base" template="/WEB-INF/template/default.jsp">
+		<put-attribute name="title" value="Home"></put-attribute>
+		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/content.jsp"></put-attribute>
+		<put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="home" extends="software.base">
+		<put-attribute name="title" value="DIU Home"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/home.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="login" extends="software.base">
+		<put-attribute name="title" value="Login"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/login.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="loggedout" extends="software.base">
+		<put-attribute name="title" value="LogOut"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/loggedout.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="welcome" extends="software.base">
+		<put-attribute name="title" value="Welcome"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/welcome.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="employee" extends="software.base">
+		<put-attribute name="title" value="Welcome"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/employee.jsp"></put-attribute>
+	</definition>
+	<definition name="student" extends="software.base">
+		<put-attribute name="title" value="Student Info"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/student.jsp"></put-attribute>
+	</definition>
+	<definition name="chartofacc" extends="software.base">
+		<put-attribute name="title" value="Student Info"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/chartofaccount.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="accountinggroup" extends="software.base">
+		<put-attribute name="title" value="ACCOUNTING GROUP"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/accountinggroup.jsp"></put-attribute>
+	</definition>
+	<definition name="journal" extends="software.base">
+		<put-attribute name="title" value="JOURNAL"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/Journal.jsp"></put-attribute>
+	</definition>
+	<definition name="fixedasset" extends="software.base">
+		<put-attribute name="title" value="Fixed Asset"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/FixedAsset.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="accbankinfo" extends="software.base">
+		<put-attribute name="title" value="Acc Bank Info"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/accbankinfo.jsp"></put-attribute>
+	</definition>
+		<definition name="accbankaccount" extends="software.base">
+		<put-attribute name="title" value="Acc Bank Account"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/accbankaccount.jsp"></put-attribute>
+	</definition>
+	<definition name="accbankchecque" extends="software.base">
+		<put-attribute name="title" value="Acc Bank Checque"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/accbankchecque.jsp"></put-attribute>
+	</definition>
+	
+		<definition name="voucher" extends="software.base">
+		<put-attribute name="title" value="Voucher"></put-attribute>
+		<put-attribute name="content" value="/WEB-INF/tiles/voucher.jsp"></put-attribute>
+	</definition>
+		
+</tiles-definitions>
